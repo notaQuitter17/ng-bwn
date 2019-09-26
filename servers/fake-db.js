@@ -42,7 +42,7 @@ class FakeDb {
 
   async  cleanDb()
     {
-        awaitRental.remove({});
+        await Rental.remove({});
     }
     pushRentalsToDb() {
         this.rentals.forEach((rental) => {
